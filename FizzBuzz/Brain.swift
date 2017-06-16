@@ -18,6 +18,9 @@ class Brain{
         if isDivisibleByFive(number){
             response += "Buzz"
         }
+        if response.isEmpty{
+            response = String(number)
+        }
         return response
     }
 }

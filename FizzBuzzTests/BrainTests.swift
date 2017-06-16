@@ -72,8 +72,8 @@ class BrainTests: QuickSpec {
             context("when number is 16"){
                 let number = Double(16)
                 
-                it("says nothing"){
-                    expect(brain.fizzAndOrBuzz(number)).to(beEmpty())
+                it("says 16"){
+                    expect(brain.fizzAndOrBuzz(number)).to(match(String(number)))
                 }
             }
         }
